@@ -98,9 +98,8 @@ input {
     border: solid 1px rgb(46, 46, 46);
     background-color: black;
 }
-form>div+div {
-    display: flex;
-    margin-left: 35%;
+form>div+div>button {
+    margin-left: 33%;
 }
 button {
     background-color: black;
@@ -135,11 +134,23 @@ p {
     color: #b92326;
 }
 #signInPage {
+    margin-left: 3%;
     font: 1rem monospace;
 }
 a {
     font-style: italic;
     color: white;
+}
+.succesImageContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+div>img.successImage {
+    width: 300px;
+    margin-bottom: 300px;
+    
 }
 @media only screen and (max-width: 400px) {
     .content {

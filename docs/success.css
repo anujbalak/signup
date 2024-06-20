@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'title';
+    src: url('./assets/those_glitch_regular-webfont.woff2') format('woff2'),
+         url('./assets/those_glitch_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sanslight';
+    src: url('./assets/firasans-light-webfont.woff2') format('woff2'),
+         url('./assets/firasans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    background-color: black;
+}
+header {
+    display: flex;
+    padding: 30px;
+    width: 100vw;
+    justify-content: center;
+    align-self: center;
+    font: 3em 'title';
+    color: #eee;
+}
+
+main.content {
+    width: 100vw;
+    display: flex;
+}
+
+.image>img {
+    height: 80vh;
+}
+.details {
+    width: 100vw;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div>img.successImage {
+    width: 300px;
+    
+}
+
+.successMessage {
+    font: 2rem 'sanslight';
+    color: #6d6daa;
+    font-weight: 800;
+}
+.newAccount {
+    color: #e8e8e8;
+    font: 1rem monospace;
+}
+a {
+    color: #6d6daa;
+}
+@media only screen and (max-width: 400px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    * {
+        scale: 96%;
+    }
+    img {
+        width: 100vw;
+        margin: 0;
+    }
+}

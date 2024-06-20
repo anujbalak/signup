@@ -8,6 +8,7 @@ submitButton.addEventListener('click', (event) => {
     checkPassword();
     if (pwd.value == pwdconfirm.value) {
         confirmDialog.textContent = '';
+        
     } else {
         confirmDialog.textContent = '• Password is mismatch!';
         event.preventDefault();
