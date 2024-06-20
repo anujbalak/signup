@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'title';
+    src: url('./assets/those_glitch_regular-webfont.woff2') format('woff2'),
+         url('./assets/those_glitch_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sanslight';
+    src: url('./assets/firasans-light-webfont.woff2') format('woff2'),
+         url('./assets/firasans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    background-color: black;
+}
+header {
+    display: flex;
+    padding: 30px;
+    width: 100vw;
+    justify-content: center;
+    align-self: center;
+    font: 3em 'title';
+    color: #eee;
+}
+
+.content {
+    display: flex;
+}
+img {
+    height: 100vh;
+}
+
+main>div+div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+    color: #eee;
+    background-color: black;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font: 1.3rem 'sanslight';
+    margin-top: 80px;
+}
+form {
+    margin-left: 5%;
+}
+
+.details {
+    margin-left: 5%;
+    font: 1.5rem 'sanslight';
+}
+.fillbox {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+form>div>div+div>div {
+    padding: 20px;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.rqd {
+    color: #fa2d4e;
+}
+input {
+    color: #d9d9d9;
+    padding: 5px;
+    width: 400px;
+    font: 1.3rem 'sanslight';
+    border-radius: 30px;
+    border: solid 1px rgb(46, 46, 46);
+    background-color: black;
+}
+form>div+div {
+    display: flex;
+    margin-left: 35%;
+}
+button {
+    background-color: black;
+    padding: 1.5rem;
+    color: #eee;
+    border-radius: 3rem;
+    border: 1px solid rgb(100, 170, 255);
+    font: 2rem Helvetica;
+    font-weight: 600;
+}
+button:hover,
+button:focus {
+    background-color: rgb(100, 170, 255);
+}
+
+p {
+    font: 1rem monospace;
+}
+
+input:hover:invalid {
+    border: 1px solid #b92326;
+}
+input:required:valid {
+    border: 1px solid rgb(100, 170, 255);
+}
+
+input:valid + label>span {
+    border: 1px solid rgb(100, 170, 255);
+}
+
+p {
+    color: #b92326;
+}
+#signInPage {
+    font: 1rem monospace;
+}
+a {
+    font-style: italic;
+    color: white;
+}
+@media only screen and (max-width: 400px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    * {
+        scale: 96%;
+    }
+    img {
+        width: 100vw;
+        margin: 0;
+    }
+}

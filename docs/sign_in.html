@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="title">Journey</div>
+  </header>
+    <main class="content">
+        <div class="image">
+            <img src="./assets/cover.jpg" alt="Modern multiple threads on a black background">
+        </div>
+        <div>
+            <div class="details">
+                A great day is just in the corner and you are gonna save your game at this checkpoint.
+            </div>
+            <form>
+                <div class="box">
+                    <div>
+                        <legend class="lgd">Log in to your account</legend>
+                    </div>
+                    <div class="fillbox">
+                        <div>
+                            <label for="useremail">Email<span class="rqd">*</span></label>
+                            <input type="email" required name="useremail" id="useremail">
+                        </div>
+                        <div>
+                            <label for="pwd">Password<span class="rqd">*</span></label>
+                            <input type="password" required name="password" id="pwd" aria-describedby="pwd" minlength="8" maxlength="20">
+                            <p id="pwd"></p>
+                        </div>
+                        <div id="signInPage">
+                            Make a new acount <a href="index.html">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button id="submit">Log in</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="credit"></div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
