@@ -4,12 +4,13 @@ const passwordDialog = document.querySelector('p[id=pwd]');
 const pwd = document.querySelector('input[name=password]');
 const pwdconfirm = document.querySelector('input[name=confirm]');
 
-submitButton.addEventListener('click', () => {
+submitButton.addEventListener('click', (event) => {
     checkPassword();
-    if (pwd.value === pwdconfirm.value) {
-        return confirmDialog.textContent = ''; 
+    if (pwd.value == pwdconfirm.value) {
+        confirmDialog.textContent = '';
     } else {
-        return confirmDialog.textContent = '• Password is mismatch!'
+        confirmDialog.textContent = '• Password is mismatch!';
+        event.preventDefault();
     }
 });
 
